@@ -99,15 +99,17 @@ main {
 
 .section-title {
 
-    margin-bottom: 30px;
+    margin-bottom: 50px;
     font-weight: 700;
     font-size: 35px;
+    text-align: center;
 }
 
 .section-description {
     color: #757575;
     font-size: 18px;
     margin-bottom: 30px;
+    text-align: center;
 }
 
 /* about */
@@ -126,4 +128,88 @@ main {
     font-size: 20px;
     color: #757575;
     font-weight: 700;
+}
+
+/* whgat i do */
+
+.what-i-do {
+    margin-top: 130px;
+    background: #FFF8F3;
+    border-radius: 10px;
+    padding: 130px 156px;
+
+}
+
+.skills-container {
+    display: flex;
+    gap: 24px;
+}
+
+.skill-title {
+    font-weight: 700;
+    font-size: 20px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+
+
+
+}
+
+.skil-descripton {
+    font-weight: 400;
+    font-size: 16px;
+    color: #757575;
+
+
+}
+
+.skill {
+    background: #FFFFFF;
+    box-shadow: 0px 6px 50px rgba(0, 0, 0, 0.06);
+    border-radius: 5px;
+    padding: 30px;
+    margin-top: 50px;
+
+}
+
+.resume-content {
+    display: flex;
+    gap: 24px;
+}
+
+.resume-item{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.resume-title {
+    font-weight: 700;
+    font-size: 30px;
+    color: #474747;
+    
+}
+
+.resume .title {
+    color: #474747;
+    font-weight: 700;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.resume .sub-title {
+    color: #757575;
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.resume .description {
+    color: #757575;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.resume-btn{
+    margin-top: 50px;
+    text-align: center;
 }
