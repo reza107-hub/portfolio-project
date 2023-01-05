@@ -1,5 +1,6 @@
 * {
     font-family: 'Open Sans';
+    font-style: normal;
     margin: 0;
     padding: 0;
 }
@@ -16,7 +17,7 @@
 nav {
     display: flex;
     justify-content: space-between;
-    margin: 0 200px;
+    margin: 50px 200px;
 }
 
 nav li {
@@ -45,7 +46,7 @@ nav ul {
     margin: 0 650px 0 200px;
     display: flex;
     align-items: center;
-    
+
 }
 
 .hi {
@@ -73,8 +74,56 @@ nav ul {
 .header {
     height: 650px;
     background: #FFF8F3;
-    background-image: url('images/header_bg.png') , url('images/developer.png');
+    background-image: url('images/header_bg.png'), url('images/developer.png');
     background-repeat: no-repeat;
     background-position: bottom right, left;
-    
+
+}
+
+/* main */
+main {
+    max-width: 1140px;
+    margin: 0 auto;
+
+}
+
+/* about section styles */
+
+.about {
+    margin-top: 130px;
+    background: #FFF8F3;
+    border-radius: 10px;
+    padding: 130px 156px;
+    text-align: center;
+}
+
+.section-title {
+
+    margin-bottom: 30px;
+    font-weight: 700;
+    font-size: 35px;
+}
+
+.section-description {
+    color: #757575;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+/* about */
+.about-info-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.info-title {
+    color: #757575;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.info-description {
+    font-size: 20px;
+    color: #757575;
+    font-weight: 700;
 }
