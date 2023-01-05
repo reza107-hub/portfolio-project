@@ -1,0 +1,80 @@
+* {
+    font-family: 'Open Sans';
+    margin: 0;
+    padding: 0;
+}
+
+.z {
+    color: #FD6E0A;
+}
+
+.Reza {
+    font-weight: 800;
+    font-size: 45px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 200px;
+}
+
+nav li {
+    list-style: none;
+    margin-left: 50px;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+
+}
+
+.btn-primary {
+    height: 64px;
+    background: #FD6E0A;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 20px;
+    color: #FFFFFF;
+    border: 0;
+    padding: 18px 35px;
+}
+
+.banner {
+    margin: 0 650px 0 200px;
+    display: flex;
+    align-items: center;
+    
+}
+
+.hi {
+
+    font-weight: 600;
+    font-size: 45px;
+    color: #474747;
+    line-height: 61px;
+    margin-bottom: 5px;
+}
+
+.Reza-bhai {
+    font-weight: 700;
+    font-size: 85px;
+    line-height: 116px;
+    margin-bottom: 20px;
+}
+
+.banner-description {
+    font-size: 18px;
+    color: #757575;
+    margin-bottom: 30px;
+}
+
+.header {
+    height: 650px;
+    background: #FFF8F3;
+    background-image: url('images/header_bg.png') , url('images/developer.png');
+    background-repeat: no-repeat;
+    background-position: bottom right, left;
+    
+}
