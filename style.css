@@ -17,7 +17,7 @@
 nav {
     display: flex;
     justify-content: space-between;
-    padding: 50px 200px;
+    padding: 20px 150px;
 }
 
 nav li {
@@ -43,10 +43,10 @@ nav ul {
 }
 
 .banner {
-    margin: 0 650px 0 200px;
+    padding: 0 0 0 150px;
     display: flex;
-    align-items: center;
-
+    gap: 20px;
+    
 }
 
 .hi {
@@ -54,14 +54,12 @@ nav ul {
     font-weight: 600;
     font-size: 45px;
     color: #474747;
-    line-height: 61px;
     margin-bottom: 5px;
 }
 
 .Reza-bhai {
     font-weight: 700;
-    font-size: 85px;
-    line-height: 116px;
+    font-size: 80px;
     margin-bottom: 20px;
 }
 
@@ -72,14 +70,13 @@ nav ul {
 }
 
 .header {
-    height: 650px;
     background: #FFF8F3;
     background-image: url('images/header_bg.png'), url('images/developer.png');
+    background-size: 50% , auto;
     background-repeat: no-repeat;
-    background-position: bottom right, left;
+    background-position: bottom right, left top;
 
 }
-
 /* main */
 main {
     max-width: 1140px;
@@ -90,15 +87,16 @@ main {
 /* about section styles */
 
 .about {
+    
     margin-top: 130px;
     background: #FFF8F3;
     border-radius: 10px;
-    padding: 130px 156px;
+    margin: 0 10%;
     text-align: center;
 }
 
 .section-title {
-
+    margin-top: 100px;
     margin-bottom: 50px;
     font-weight: 700;
     font-size: 35px;
@@ -106,6 +104,7 @@ main {
 }
 
 .section-description {
+    padding: 0 10%;
     color: #757575;
     font-size: 18px;
     margin-bottom: 30px;
@@ -115,6 +114,7 @@ main {
 /* about */
 .about-info-container {
     display: flex;
+    gap: 10px;
     justify-content: space-around;
 }
 
@@ -136,7 +136,6 @@ main {
     margin-top: 130px;
     background: #FFF8F3;
     border-radius: 10px;
-    padding: 130px 156px;
 
 }
 
@@ -226,6 +225,7 @@ main {
 
 .contact .section-title{
     text-align: left;
+    padding: 0 10%;
 }
 
 .contact input[type='text'], input[type='email'] , textarea{
@@ -242,7 +242,91 @@ input{
 .contact .section-description{
     text-align: left;
 }
-
+.contact-link {
+    margin: 0 9%;
+}
 .contact .a{
     text-decoration: none;
+    
+}
+.btn-primary:hover{
+    background-color: aqua;
+}
+/* resposive */
+
+@media screen and (max-width: 576px) {
+    nav, nav ul, .banner,.skills-container, .resume-content, .about-info-container, .contact {
+        flex-direction: column;
+        gap: 20px;
+        padding: 0 20px;
+    }
+    nav ul {
+        align-items: flex-start;
+        padding-left: 0;
+    }
+    nav li {
+        margin: 0;
+    }
+    .banner{
+        margin: 0;
+    }
+    .banner img {
+        width: 100%;
+    }
+    .header{
+        background-image: none;
+    }
+    .resume-content, .contact {
+        margin: 0 20px;
+    }
+    .contact input[type='text'], input[type='email'], textarea {
+        margin: 0 10%;
+        width: 75%;
+        padding: 18px 8px;
+    }
+    .contact .btn-primary{
+        margin: 0 10%;
+    }
+    .resume .section-title {
+        margin: 100px 20px 50px 20px;
+    }
+    .about .section-description {
+        padding: 0 4%;
+    }
+    .what-i-do .section-description {
+        padding: 0 8%;
+    }
+}
+
+@media screen and (min-width: 577px) and (max-width:992px) {
+    .banner,.resume-content, .about-info-container, .contact {
+        flex-direction: column;
+        gap: 20px;
+        padding: 0 10px;
+    }
+    .header {
+        background-position: right bottom,left bottom;
+    }
+    .banner img {
+        width: 100%;
+    }
+    .header li .btn-primary{
+        height: 100%;
+        padding: 10px;
+    }
+    .skills-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .resume-content, .contact {
+        margin: 0 20px;
+    }
+    .contact input[type='text'], input[type='email'], textarea {
+        margin: 0 10%;
+        width: 75%;
+        padding: 18px 8px;
+    }
+    .contact .btn-primary{
+        margin: 0 10%;
+    }
 }
