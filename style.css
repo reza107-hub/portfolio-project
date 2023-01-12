@@ -304,16 +304,16 @@ input{
         gap: 20px;
         padding: 0 10px;
     }
+    nav {
+        padding: 20px 10px;
+    }
     .header {
         background-position: right bottom,left bottom;
     }
     .banner img {
         width: 100%;
     }
-    .header li .btn-primary{
-        height: 100%;
-        padding: 10px;
-    }
+    
     .skills-container {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
